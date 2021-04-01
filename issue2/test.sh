@@ -26,7 +26,6 @@ set_folder() {
 
 set_folder
 
-
 # Run Tests
 
 customReportDir=$test_folder
