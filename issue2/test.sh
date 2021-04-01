@@ -1,4 +1,6 @@
-project_working_directory=$PWD/../../..
+#!/bin/bash
+
+project_working_directory=$PWD/../../
 test_folder=$project_working_directory/tests/
 submission_directory="$PWD/../../submissions"
 

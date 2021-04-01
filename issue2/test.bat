@@ -2,7 +2,6 @@
 
 SETLOCAL
 
-
 SET /P first_name="Enter First Name: "
 SET /P last_name="Enter Last Name: "
 SET /P html_file="Enter HTML file name & location (e.g HTML/product.html): "
