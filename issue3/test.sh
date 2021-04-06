@@ -16,7 +16,7 @@ echo -n "Enter Last Name : "
 read last_name
 
 echo -n "Enter file name & location (e.g html-forms/contact.html) : "
-read html_file
+read file
 
 set_folder() {
     first_name=$(echo "$first_name" | tr '[:upper:]' '[:lower:]')
