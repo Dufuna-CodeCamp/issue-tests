@@ -8,9 +8,15 @@ describe("Testing Scholars Project", function () {
         .forBrowser('chrome')
         .build();
 
-    before(function setupWebdriver(done) {
-        driver.get("file:///C:/Users/oemma/mocha_test/Dufuna-Fem/submissions/modupeAdeOnojobi/html-forms/contact.html").then(done)
-    });
+        before(function setupWebdriver(done) {
+            var file_url = `file://${file_path}`;
+            driver.get(file_url).then(done);
+        });
+    
+        after(function() {
+            driver.quit();
+        });
+        
     it('test case: assert 4 input fields are present', async () => {
         const images = await driver.findElements(By.css('input'));
         const size = images.length
