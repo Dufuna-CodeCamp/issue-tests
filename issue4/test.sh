@@ -15,7 +15,7 @@ read first_name
 echo -n "Enter Last Name : "
 read last_name
 
-echo -n "Enter file name & location (e.g html-forms/contact.html) : "
+echo -n "Enter HTML file name & location (e.g HTML/product.html) : "
 read html_file
 
 set_folder() {
@@ -34,4 +34,4 @@ customReportDir=$test_folder
 customReportFilename=logfile
 
 echo -e "${ITALIC}visit${NONE} ${BOLD}${UNDERLINE}$test_folder/logfile.html${NONE} in your browser to see test reports"
-env FILE_PATH=$submission_directory/$folder_name/$file mocha $test_folder/issue3/html_form_task.js --reporter mochawesome --reporter-options reportDir=$customReportDir,reportFilename=$customReportFilename,quiet=true
+env FILE_PATH=$submission_directory/$folder_name/$html_file mocha $test_folder/issue2/html_task.js --reporter mochawesome --reporter-options reportDir=$customReportDir,reportFilename=$customReportFilename,quiet=true

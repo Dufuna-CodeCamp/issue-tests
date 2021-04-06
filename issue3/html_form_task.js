@@ -1,3 +1,4 @@
+var file_path = process.env.FILE_PATH;
 var webdriver = require('selenium-webdriver');
 var assert = require('chai').assert;
 var { Builder, By } = require("selenium-webdriver");

@@ -4,7 +4,7 @@ SETLOCAL
 
 SET /P first_name="Enter First Name: "
 SET /P last_name="Enter Last Name: "
-SET /P html_file="Enter HTML file name & location (e.g html-forms/contact.html): "
+SET /P file="Enter file name & location (e.g html-forms/contact.html): "
 
 SET submission_directory="%~dp0../../submissions"
 SET test_folder="%submission_directory:"=%/../tests"
@@ -32,7 +32,7 @@ SET customReportFilename=logfile
 ECHO.
 ECHO [92mvisit %test_folder%/logfile.html in your browser to see test reports[0m
 
-env FILE_PATH=%path_to_folder:="%/%html_file:="% "%APPDATA:"=%\npm\mocha.cmd" "%test_folder:"=%\issue3\html_form_task.js" --reporter mochawesome --reporter-options reportDir=%test_folder%,reportFilename=%customReportFilename%,quiet=true
+env FILE_PATH=%path_to_folder:="%/%file:="% "%APPDATA:"=%\npm\mocha.cmd" "%test_folder:"=%\issue3\html_form_task.js" --reporter mochawesome --reporter-options reportDir=%test_folder%,reportFilename=%customReportFilename%,quiet=true
 
 :TrimFirstName
 :: trim left whitespace
