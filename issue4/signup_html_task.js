@@ -28,14 +28,14 @@ describe("Testing Scholars Project", function () {
     it('test case: First Name label is present', async () => {
         const name = driver.wait(webdriver.until.elementLocated(webdriver.By.css("footer")));
         const text = await name.getText();
-        assert.include(text, "Contact Us", `Ensure "Contact Us" label is present`);
+        assert.include(text, "Contact Us", `Ensure "Contact Us" text is present in footer`);
 
     });
 
     it('test case: First Name label is present', async () => {
         const name = driver.wait(webdriver.until.elementLocated(webdriver.By.css("footer")));
         const text = await name.getText();
-        assert.include(text, "About Us", `Ensure "About Us" is present`);
+        assert.include(text, "About Us", `Ensure "About Us" is present in footer`);
 
     });
 
