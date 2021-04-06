@@ -7,4 +7,5 @@ This repository contains tests written for tasks or issues created on any of the
 - Include your name as a contributor 😉
 
 ## Contributors
-- Folashade Daniel - [@beccadaniel](github.com/beccadaniel)
+- Folashade Daniel - [@beccadaniel](https://github.com/beccadaniel)
+- Ireti Ogedengbe - [@ireti203](https://github.com/ireti203)
