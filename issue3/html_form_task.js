@@ -19,8 +19,8 @@ describe("Testing Scholars Project", function () {
         });
         
     it('test case: assert 4 input fields are present', async () => {
-        const images = await driver.findElements(By.css('input'));
-        const size = images.length
+        const input = await driver.findElements(By.css('input'));
+        const size = input.length
 
         assert.equal(size, 4, `Ensure you have all the input fields in the order stated in the task criteria`);
     });
