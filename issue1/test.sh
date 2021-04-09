@@ -57,7 +57,6 @@ check_aboutMe_folder_existence() {
 }
 
 check_file_existence() {
-
     if [ -z "$(ls -A $path_to_aboutMe_folder)" ]
     then
         file_exists=0
