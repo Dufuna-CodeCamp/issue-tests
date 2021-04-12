@@ -22,7 +22,7 @@ input:focus, button:focus{
 }
 /* Navbar Section */
 .navbar, .mobile-navbar{
-    background: blue;   
+    background: #28104e;   
     color : white;
 }
 .navbar{
@@ -47,7 +47,7 @@ input:focus, button:focus{
     color: white;
 }
 .navbar a:hover{
-    color: black;
+    color: #8e83d1;
 }
 /* Product Details Section */
 .product-box {
@@ -94,7 +94,7 @@ input:focus, button:focus{
     font-size: 20px;
 }
 .buy-btn{
-    background-color: orange;
+    background-color: #37a048;
     padding: 12px 14px;
     border-radius: 15px;
     font-size: 15px;
@@ -145,7 +145,7 @@ input:focus, button:focus{
 }
 /*Footer Section*/
 .footer{
-    background-color: blue;
+    background-color: #28104e;
     padding: 20px 40px;
 }
 .footer p{
@@ -169,7 +169,7 @@ input:focus, button:focus{
 }
 .footer input{
     border: 1px solid #707070;
-    color: blue;
+    color: #28104e;
     background-color: white;
     width: 210px;
     height: 26px;
@@ -177,7 +177,7 @@ input:focus, button:focus{
     padding-left: 15px;
 }
 .footer input::placeholder, .footer #submit{
-    color: blue;
+    color: #28104e;
     font-family: 'Montserrat', sans-serif;
 }
 .footer #submit{
@@ -260,13 +260,13 @@ input:focus, button:focus{
     border-radius: 4px; 
 }
 .contact-form button:hover{
-    background-color: blue;
+    background-color: #3a1573;
 }
 .contact-form p, .contact-form h3{
     text-align: center;
 }
 .signup-box h1{
-    color: blue;
+    color: #28104e;
     font-weight: bold;
     font-size: xxx-large;
 }
@@ -296,7 +296,7 @@ input:focus, button:focus{
     text-align: center;
 }
 label[for="terms-agreement"]{
-    color: blue;
+    color: #28104e;
     font-weight: bold;
 }
 .signup-form{ 
@@ -313,13 +313,13 @@ label[for="terms-agreement"]{
     display: flex;
     padding: 14px 36px;
     color: #ffffff;
-    background: blue;
+    background: #28104e;
     border-radius: 10px;  
     margin-left: auto;
     margin-right: auto;
 }
 .signup-form button:hover{
-    background-color: blue;
+    background-color: #3a1573;
 }
 .signup-box .left .content{
     width: 75%;
