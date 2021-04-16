@@ -62,7 +62,7 @@ IF %folder_exists% GTR 0 (
             ECHO.
             ECHO [7m Checking the aboutMe text file ... [0m
             ECHO.
-            ECHO [91m1. You should create a text file named [4maboutMe.txt[0m[91m or [4maboutMe[0m[91m.
+            ECHO [91m1. You should create a text file.
             ECHO 2. Ensure your file is located in the [4maboutMe[0m [91mfolder you have created.
             ECHO 3. Ensure your text file contains text.[0m
         )
