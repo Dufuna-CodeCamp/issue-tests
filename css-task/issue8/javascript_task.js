@@ -24,16 +24,16 @@ describe("Testing Scholars Project", function () {
         assert.equal(productLists.length, 3, `Ensure there are 3 objects in the productLists array` );
       });
 
-      it('test case: First Name label is present', async () => {
+      it('test case: productList array is present', async () => {
         const name = driver.wait(webdriver.until.elementLocated(webdriver.By.css("body")));
         const text = await name.getText();
-        assert.include(text, "productList", `Ensure "Contact Us" label is present`);
+        assert.include(text, "productList", `Ensure "productList" array is present`);
 
     });
 
-    it('test case: First Name label is present', async () => {
+    it('test case: check console.log', async () => {
         const name = driver.wait(webdriver.until.elementLocated(webdriver.By.css("body")));
         const text = await name.getText();
-      assert.include(text, "console.log(`${product.productName} with ${product.imageUrl} is sold for ${product.productPrice}`)", `Ensure "Contact Us" label is present`);
+      assert.include(text, "console.log(`${product.productName} with ${product.imageUrl} is sold for ${product.productPrice}`)", `Ensure you have the expected output on console.log`);
     });
 });
