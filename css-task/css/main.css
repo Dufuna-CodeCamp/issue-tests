@@ -308,7 +308,7 @@ input:focus, button:focus{
 }
 
 label[for="terms-agreement"]{
-    color: #28104e;
+    color: blue;
     font-weight: bold;
 }
 .signup-form{ 
