@@ -258,7 +258,7 @@ input:focus, button:focus{
     margin-left: auto;
     padding: 14px 28px;
     color: #ffffff;
-    background: #28104e;
+    background: blue;
     border-radius: 4px; 
 }
 .contact-form button:hover{
@@ -268,7 +268,7 @@ input:focus, button:focus{
     text-align: center;
 }
 .signup-box h1{
-    color: #28104e;
+    color: blue;
     font-weight: bold;
     font-size: xxx-large;
 }
@@ -325,7 +325,7 @@ label[for="terms-agreement"]{
     display: flex;
     padding: 14px 36px;
     color: #ffffff;
-    background: #28104e;
+    background: blue;
     border-radius: 10px;  
     margin-left: auto;
     margin-right: auto;
