@@ -3,7 +3,7 @@ var webdriver = require('selenium-webdriver');
 var assert = require('chai').assert;
 var { Builder, By } = require("selenium-webdriver");
 
-describe("Testing Scholars Project", function () {
+describe("Testing HTML Task", function () {
     this.timeout(3 * 1000 * 60);
     var driver = new webdriver.Builder()
         .forBrowser('chrome')
