@@ -1,8 +1,14 @@
 #!/bin/bash
 
-project_working_directory=$PWD/../../
+working_directory=$(pwd -W)
+if [ $? -eq 0 ]
+then
+    project_working_directory=$working_directory/../../
+else
+    project_working_directory=$PWD/../../
+fi
 test_folder=$project_working_directory/tests/
-submission_directory="$PWD/../../submissions"
+submission_directory="$project_working_directory/submissions"
 
 NONE='\033[00m'
 BOLD='\x1b[1m'
@@ -15,8 +21,8 @@ read first_name
 echo -n "Enter Last Name : "
 read last_name
 
-echo -n "Enter file name & location (e.g html-forms/contact.html) : "
-read file
+echo -n "Enter HTML file name & location (e.g HTML/product.html) : "
+read html_file
 
 set_folder() {
     first_name=$(echo "$first_name" | tr '[:upper:]' '[:lower:]')
@@ -34,4 +40,4 @@ customReportDir=$test_folder
 customReportFilename=logfile
 
 echo -e "${ITALIC}visit${NONE} ${BOLD}${UNDERLINE}$test_folder/logfile.html${NONE} in your browser to see test reports"
-env FILE_PATH=$submission_directory/$folder_name/$file mocha $test_folder/issue3/html_form_task.js --reporter mochawesome --reporter-options reportDir=$customReportDir,reportFilename=$customReportFilename,quiet=true
+env FILE_PATH=$submission_directory/$folder_name/$html_file mocha $PWD/html_task.js --reporter mochawesome --reporter-options reportDir=$customReportDir,reportFilename=$customReportFilename,quiet=true
