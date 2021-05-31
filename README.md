@@ -9,3 +9,4 @@ This repository contains tests written for tasks or issues created on any of the
 ## Contributors
 - Folashade Daniel - [@beccadaniel](https://github.com/beccadaniel)
 - Ireti Ogedengbe - [@ireti203](https://github.com/ireti203)
+- Jesutofunmi Adewole - [@morenayd](https://github.com/morenayd)
